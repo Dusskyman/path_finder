@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'field_model.dart';
+part of 'grid_model.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -12,14 +12,14 @@ part of 'field_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-FieldModel _$FieldModelFromJson(Map<String, dynamic> json) {
-  return _FieldModel.fromJson(json);
+GridModel _$GridModelFromJson(Map<String, dynamic> json) {
+  return _GridModel.fromJson(json);
 }
 
 /// @nodoc
-mixin _$FieldModel {
+mixin _$GridModel {
   String get id => throw _privateConstructorUsedError;
   List<String> get field => throw _privateConstructorUsedError;
   Map<String, int> get start => throw _privateConstructorUsedError;
@@ -27,15 +27,14 @@ mixin _$FieldModel {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $FieldModelCopyWith<FieldModel> get copyWith =>
+  $GridModelCopyWith<GridModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FieldModelCopyWith<$Res> {
-  factory $FieldModelCopyWith(
-          FieldModel value, $Res Function(FieldModel) then) =
-      _$FieldModelCopyWithImpl<$Res, FieldModel>;
+abstract class $GridModelCopyWith<$Res> {
+  factory $GridModelCopyWith(GridModel value, $Res Function(GridModel) then) =
+      _$GridModelCopyWithImpl<$Res, GridModel>;
   @useResult
   $Res call(
       {String id,
@@ -45,9 +44,9 @@ abstract class $FieldModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FieldModelCopyWithImpl<$Res, $Val extends FieldModel>
-    implements $FieldModelCopyWith<$Res> {
-  _$FieldModelCopyWithImpl(this._value, this._then);
+class _$GridModelCopyWithImpl<$Res, $Val extends GridModel>
+    implements $GridModelCopyWith<$Res> {
+  _$GridModelCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -84,11 +83,11 @@ class _$FieldModelCopyWithImpl<$Res, $Val extends FieldModel>
 }
 
 /// @nodoc
-abstract class _$$_FieldModelCopyWith<$Res>
-    implements $FieldModelCopyWith<$Res> {
-  factory _$$_FieldModelCopyWith(
-          _$_FieldModel value, $Res Function(_$_FieldModel) then) =
-      __$$_FieldModelCopyWithImpl<$Res>;
+abstract class _$$GridModelImplCopyWith<$Res>
+    implements $GridModelCopyWith<$Res> {
+  factory _$$GridModelImplCopyWith(
+          _$GridModelImpl value, $Res Function(_$GridModelImpl) then) =
+      __$$GridModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -99,11 +98,11 @@ abstract class _$$_FieldModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_FieldModelCopyWithImpl<$Res>
-    extends _$FieldModelCopyWithImpl<$Res, _$_FieldModel>
-    implements _$$_FieldModelCopyWith<$Res> {
-  __$$_FieldModelCopyWithImpl(
-      _$_FieldModel _value, $Res Function(_$_FieldModel) _then)
+class __$$GridModelImplCopyWithImpl<$Res>
+    extends _$GridModelCopyWithImpl<$Res, _$GridModelImpl>
+    implements _$$GridModelImplCopyWith<$Res> {
+  __$$GridModelImplCopyWithImpl(
+      _$GridModelImpl _value, $Res Function(_$GridModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -114,7 +113,7 @@ class __$$_FieldModelCopyWithImpl<$Res>
     Object? start = null,
     Object? end = null,
   }) {
-    return _then(_$_FieldModel(
+    return _then(_$GridModelImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -137,8 +136,8 @@ class __$$_FieldModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_FieldModel extends _FieldModel {
-  const _$_FieldModel(
+class _$GridModelImpl extends _GridModel {
+  const _$GridModelImpl(
       {required this.id,
       required final List<String> field,
       required final Map<String, int> start,
@@ -148,8 +147,8 @@ class _$_FieldModel extends _FieldModel {
         _end = end,
         super._();
 
-  factory _$_FieldModel.fromJson(Map<String, dynamic> json) =>
-      _$$_FieldModelFromJson(json);
+  factory _$GridModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$GridModelImplFromJson(json);
 
   @override
   final String id;
@@ -179,14 +178,14 @@ class _$_FieldModel extends _FieldModel {
 
   @override
   String toString() {
-    return 'FieldModel(id: $id, field: $field, start: $start, end: $end)';
+    return 'GridModel(id: $id, field: $field, start: $start, end: $end)';
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_FieldModel &&
+            other is _$GridModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             const DeepCollectionEquality().equals(other._field, _field) &&
             const DeepCollectionEquality().equals(other._start, _start) &&
@@ -205,27 +204,27 @@ class _$_FieldModel extends _FieldModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_FieldModelCopyWith<_$_FieldModel> get copyWith =>
-      __$$_FieldModelCopyWithImpl<_$_FieldModel>(this, _$identity);
+  _$$GridModelImplCopyWith<_$GridModelImpl> get copyWith =>
+      __$$GridModelImplCopyWithImpl<_$GridModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FieldModelToJson(
+    return _$$GridModelImplToJson(
       this,
     );
   }
 }
 
-abstract class _FieldModel extends FieldModel {
-  const factory _FieldModel(
+abstract class _GridModel extends GridModel {
+  const factory _GridModel(
       {required final String id,
       required final List<String> field,
       required final Map<String, int> start,
-      required final Map<String, int> end}) = _$_FieldModel;
-  const _FieldModel._() : super._();
+      required final Map<String, int> end}) = _$GridModelImpl;
+  const _GridModel._() : super._();
 
-  factory _FieldModel.fromJson(Map<String, dynamic> json) =
-      _$_FieldModel.fromJson;
+  factory _GridModel.fromJson(Map<String, dynamic> json) =
+      _$GridModelImpl.fromJson;
 
   @override
   String get id;
@@ -237,6 +236,6 @@ abstract class _FieldModel extends FieldModel {
   Map<String, int> get end;
   @override
   @JsonKey(ignore: true)
-  _$$_FieldModelCopyWith<_$_FieldModel> get copyWith =>
+  _$$GridModelImplCopyWith<_$GridModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
